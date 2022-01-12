@@ -5,26 +5,32 @@
     </head>
 
     <body>
-        <div class="col-sm">
-          <h1><span class="badge badge-light">Waste Classification</span></h1>
+        <div align="center">
+          <h1 style="margin-bottom:0.5cm;font-family:tahoma;font-size:300%;"><span class="badge badge-light">Waste Classification</span></h1>
         </div>
     
-        <div class="col-sm">
+        <div align="center">
+            <p style="margin-bottom:1cm;font-family:tahoma;font-size:110%;">Upload the image of an item that you would like the model to classify.</p>
+        </div>
+
+        <div align="center">
           <form action="/predict" method="post" enctype="multipart/form-data">
               <input type="file" name="file" />
-              <input type="submit" value="Upload">
+              <input type="hidden" name="file_id" value="user_input" />
+              <input type="submit" value="Upload"/>
           </form>
         </div>
 
         <br>
 
-        <div class = "col-sm">
-            <img src="{{ image_uploaded }}" alt="Selected Image" class="img-thumbnail" accept="image/jpeg"> 
+        <div align="center" style="margin-bottom:1cm;">
+            <img src="{{ image_uploaded }}" alt="Selected Image" class="img-thumbnail"/> 
         </div>
 
-        <div class="col-sm">
-            <h1><span class="badge badge-secondary">{{ waste_type }}</span></h1>
+        <div align="center">
+            <h1 style="font-family:tahoma;"><span class="badge badge-secondary">{{ waste_type }}</span></h1>
         </div>
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
