@@ -19,7 +19,8 @@ model = load_model('waste_model.h5', compile = True)
 @app.route('/')
 def home():
     # Load the html file as layout
-    return render_template("waste.html")
+    
+    return render_template("waste.html", waste_type = "The result will be shown here.")
 
 @app.route("/predict", methods = ['GET','POST'])
 def predict():
@@ -37,7 +38,7 @@ def predict():
         
         image_uploaded = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(image_uploaded)
-        
+            
         # Load and adjust the image 
         img = load_img(image_uploaded , target_size = (150 , 150))
         img = img_to_array(img)
