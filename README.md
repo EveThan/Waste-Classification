@@ -1,6 +1,15 @@
+The front page of the website:
 <p align="center">
   <img width="1440" alt="Screenshot 2022-01-19 at 1 47 49 PM" src="https://user-images.githubusercontent.com/46462603/150211930-d08fa908-03c4-4da0-afc5-da9d50b3fa99.png">
+</p>
+
+The website after the user uploaded a photo of straws.
+<p align="center">
 <img width="1440" alt="Screenshot 2022-01-19 at 1 49 36 PM" src="https://user-images.githubusercontent.com/46462603/150211938-e3900ba0-b816-4e6e-9276-9c7081b2c7da.png">
+</p>
+
+A sample of the dataset.
+<p align="center">
   <img width="592" alt="Screenshot 2022-01-19 at 2 01 51 AM" src="https://user-images.githubusercontent.com/46462603/150097996-8bae695e-ac00-4cd2-bda6-0524bfd1b7ef.png">
 </p>
 
