@@ -14,13 +14,13 @@ A sample of the dataset.
 </p>
 
 ## Goal
-To create a machine learning model that is able to differentiate between organic and recylcing wastes based on their images.
+To create a website that helps the user classify wastes into organic and recylcing wastes based on their images.
 
 ## Dataset
 The dataset is obtained from https://www.kaggle.com/techsash/waste-classification-data. There are altogether 22564 images in the training folder and 2513 images in the test folder. I put split some of the photos randomly to create another folder named as the validation set. In my project, there are 19998 images in the training set, 475 images in the validation set, and 2038 images in the test set. 
 
 ## Approaches
-The InceptionV3 model with Imagenet weights is used. The last layer of the neural network is trained again with our images. The trained model is able to achieve an accuracy of around 83% when tested on the test set. 
+The InceptionV3 model with Imagenet weights is used. The last layer of the neural network is trained again with our images. The trained model is able to achieve an accuracy of around 83% when tested on the test set. Streamlit is used to create and run the web application.
 
 ## Comments
 The model tends to associate bright and colourful items with organic wastes. Therefore, it would sometimes classify colourful straws as organic wastes.
