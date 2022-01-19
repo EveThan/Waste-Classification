@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run waste_streamlit_app.py
