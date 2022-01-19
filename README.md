@@ -1,11 +1,11 @@
 The front page of the website:
 <p align="center">
-  <img width="1440" alt="Screenshot 2022-01-19 at 1 47 49 PM" src="https://user-images.githubusercontent.com/46462603/150211930-d08fa908-03c4-4da0-afc5-da9d50b3fa99.png">
+  <img width="1440" alt="Screenshot 2022-01-19 at 1 47 49 PM" src="https://user-images.githubusercontent.com/46462603/150212757-acd9b457-bf01-4077-a9b5-d800ae9ef95c.png">
 </p>
 
 The website after the user uploaded a photo of straws.
 <p align="center">
-<img width="1440" alt="Screenshot 2022-01-19 at 1 49 36 PM" src="https://user-images.githubusercontent.com/46462603/150211938-e3900ba0-b816-4e6e-9276-9c7081b2c7da.png">
+<img width="1440" alt="Screenshot 2022-01-19 at 1 57 29 PM" src="https://user-images.githubusercontent.com/46462603/150212763-69406669-001e-42ff-add6-0fa96d5c1805.png">
 </p>
 
 A sample of the dataset.
