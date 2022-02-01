@@ -54,17 +54,17 @@ From what I have observed, the trained waste image classification model tends to
 ## References
 - Image Augmentation on the fly using Keras ImageDataGenerator <br>
   https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
-- What exactly does shear do in ImageDataGenerator of Keras
+- What exactly does shear do in ImageDataGenerator of Keras <br>
   https://stackoverflow.com/questions/57301330/what-exactly-the-shear-do-in-imagedatagenerator-of-keras
-- Why we have to rescale by 1. / 255
+- Why we have to rescale by 1. / 255 <br>
   https://github.com/Arsey/keras-transfer-learning-for-oxford102/issues/1
-- Tutorial on using Keras flow_from_directory and generators
+- Tutorial on using Keras flow_from_directory and generators <br>
   https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
-- Transfer learning and fine-tuning
+- Transfer learning and fine-tuning <br>
   https://www.tensorflow.org/guide/keras/transfer_learning
-- Deep Learning A-Z™: Convolutional Neural Networks (CNN) - Step 3: Flattening
+- Deep Learning A-Z™: Convolutional Neural Networks (CNN) - Step 3: Flattening <br>
   https://www.slideshare.net/KirillEremenko/deep-learning-az-convolutional-neural-networks-cnn-step-3-flattening
-- Module: tf.keras.models
+- Module: tf.keras.models <br>
   https://www.tensorflow.org/api_docs/python/tf/keras/models
-- Dense layer binary classification cannot be set to 2
+- Dense layer binary classification cannot be set to 2 <br>
   https://stackoverflow.com/questions/67127120/dense-layer-binary-classification-cannot-be-set-to-2
