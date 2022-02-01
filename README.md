@@ -39,7 +39,7 @@ Using EarlyStopping with a patience of 5 epochs on validation loss, the model fi
 Streamlit is used to create and run the web application. To run the web application, simply enter the command 'streamlit run waste_streamlit_app.py' in the terminal. The website will automatically pop up in the browser. 
 
 ## Comments
-The file waste_model.h5 used in waste_streamlit_app.py can be downloaded in the Waste_Image_Classification.ipynb file. The waste_model.h5 file is not uploaded onto GitHub because its size is too large.
+The file waste_model.h5 used in <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/waste_streamlit_app.py" target="_blank">waste_streamlit_app.py</a> can be downloaded in the <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Waste_Image_Classification.ipynb" target="_blank">Waste_Image_Classification.ipynb</a> file. The waste_model.h5 file is not uploaded onto GitHub because its size is too large.
 
 From what I have observed, the trained waste image classification model tends to associate bright and colourful items with organic wastes. Therefore, it would sometimes classify colourful straws as organic wastes.  
 
