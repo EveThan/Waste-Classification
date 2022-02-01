@@ -14,26 +14,31 @@ A sample of the dataset.
 </p>
 
 ## Goal
-To create a website that helps the user classify wastes into organic and recylcing wastes based on their images.
+To create a website that helps the user classify images of wastes into organic and recylcing wastes. 
 
 ## Dataset
-The dataset is obtained from https://www.kaggle.com/techsash/waste-classification-data. There are altogether 22564 images in the training folder and 2513 images in the test folder. I put split some of the photos randomly to create another folder named as the validation set. In my project, there are 19998 images in the training set, 475 images in the validation set, and 2038 images in the test set. 
+The dataset is obtained from https://www.kaggle.com/techsash/waste-classification-data. There are altogether 22564 images in the training folder and 2513 images in the test folder. I split some of the photos randomly to create another folder named as the validation set. In my project, there are 19998 images in the training set, 475 images in the validation set, and 2038 images in the test set. 
+
+In each of the training, validation, and test folders, there are 2 subfolders named 'O' and 'R'. The subfolders 'O' contain images of organic items such as fruits and vegetables while the subfolders 'R' contain images of recyclable items such as plastic bottles and papers. Some of the images have clear, white backgrounds while some of them have more complex backgrounds. Some examples of the dataset can be found at https://www.kaggle.com/techsash/waste-classification-data or the Waste_Image_Classification.ipynb file. 
 
 ## Approaches
-The InceptionV3 model with Imagenet weights is used. The last layer of the neural network is trained again with our images. The trained model is able to achieve an accuracy of around 83% when tested on the test set. Streamlit is used to create and run the web application.
+The InceptionV3 model with Imagenet weights is used. All the layers except the last one are frozen to avoid destroying any of the information they contain in future training. The last layer of the neural network is added and trained with our training images. Since we want to use probabilities as a basis of how we decide whether the item in a given image is organic or recyclable, the activation function used for the last layer is the Sigmoid function. 
+
+Using EarlyStopping with a patience of 5 epochs on validation loss, the model fit the training data with a validation loss of 0.2896 and validation accuracy of 0.8737 or 87%. The trained model is able to achieve an accuracy of around 83% when tested on the test set. 
+
+Streamlit is used to create and run the web application. To run the web application, simply enter the command 'streamlit run waste_streamlit_app.py' in the terminal. The website will automatically pop up in the browser. 
 
 ## Comments
-The model tends to associate bright and colourful items with organic wastes. Therefore, it would sometimes classify colourful straws as organic wastes.
+The file waste_model.h5 used in waste_streamlit_app.py can be downloaded in the Waste_Image_Classification.ipynb file. The waste_model.h5 file is not uploaded onto GitHub because its size is too large.
+
+From what I have observed, the trained waste image classification model tends to associate bright and colourful items with organic wastes. Therefore, it would sometimes classify colourful straws as organic wastes.  
 
 ## References
-https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
-https://stackoverflow.com/questions/57301330/what-exactly-the-shear-do-in-imagedatagenerator-of-keras
-https://github.com/Arsey/keras-transfer-learning-for-oxford102/issues/1
-https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
-https://www.tensorflow.org/guide/keras/transfer_learning
-https://www.slideshare.net/KirillEremenko/deep-learning-az-convolutional-neural-networks-cnn-step-3-flattening
-https://www.tensorflow.org/api_docs/python/tf/keras/models
-https://stackoverflow.com/questions/67127120/dense-layer-binary-classification-cannot-be-set-to-2
-
-
-
+- Image Augmentation on the fly using Keras ImageDataGenerator: https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
+- What exactly does shear do in ImageDataGenerator of Keras: https://stackoverflow.com/questions/57301330/what-exactly-the-shear-do-in-imagedatagenerator-of-keras
+- Why we have to rescale by 1. / 255: https://github.com/Arsey/keras-transfer-learning-for-oxford102/issues/1
+- Tutorial on using Keras flow_from_directory and generators: https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
+- Transfer learning and fine-tuning: https://www.tensorflow.org/guide/keras/transfer_learning
+- Deep Learning A-Z™: Convolutional Neural Networks (CNN) - Step 3: Flattening: https://www.slideshare.net/KirillEremenko/deep-learning-az-convolutional-neural-networks-cnn-step-3-flattening
+- Module: tf.keras.models: https://www.tensorflow.org/api_docs/python/tf/keras/models
+- Dense layer binary classification cannot be set to 2: https://stackoverflow.com/questions/67127120/dense-layer-binary-classification-cannot-be-set-to-2
