@@ -1,3 +1,5 @@
+# Waste Image Classification Website
+
 The front page of the website:
 <p align="center">
   <img width="1440" alt="Screenshot 2022-01-19 at 1 47 49 PM" src="https://user-images.githubusercontent.com/46462603/150212757-acd9b457-bf01-4077-a9b5-d800ae9ef95c.png">
