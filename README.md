@@ -52,7 +52,7 @@ The file waste_model.h5 used in <a href="https://github.com/ZhengEnThan/Waste-Cl
 From what I have observed, the trained waste image classification model tends to associate bright and colourful items with organic wastes. Therefore, it would sometimes classify colourful straws as organic wastes.  
 
 ## References
-- Image Augmentation on the fly using Keras ImageDataGenerator 
+- Image Augmentation on the fly using Keras ImageDataGenerator <br>
   https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
 - What exactly does shear do in ImageDataGenerator of Keras
   https://stackoverflow.com/questions/57301330/what-exactly-the-shear-do-in-imagedatagenerator-of-keras
