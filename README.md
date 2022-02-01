@@ -26,6 +26,14 @@ A sample of the dataset.
 ## Goal
 To create a website that helps the user classify images of wastes into organic and recylcing wastes. 
 
+## Code, files, or folders needed to run the program
+- <a href="https://github.com/ZhengEnThan/Waste-Classification/tree/main/templates" target="_blank">templates</a>
+- <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Procfile" target="_blank">Procfile</a>
+- <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Waste_Image_Classification.ipynb" target="_blank">Waste_Image_Classification.ipynb</a>
+- <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/requirements.txt" target="_blank">requirements.txt</a>
+- <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/setup.sh" target="_blank">setup.sh</a>
+- <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/waste_streamlit_app.py" target="_blank">waste_streamlit_app.py</a>
+
 ## Dataset
 The dataset is obtained from <a href="https://www.kaggle.com/techsash/waste-classification-data" target="_blank">Waste Classification data on Kaggle</a>. There are altogether 22564 images in the training folder and 2513 images in the test folder. I split some of the photos randomly to create another folder named as the validation set. In my project, there are 19998 images in the training set, 475 images in the validation set, and 2038 images in the test set. 
 
@@ -44,11 +52,19 @@ The file waste_model.h5 used in <a href="https://github.com/ZhengEnThan/Waste-Cl
 From what I have observed, the trained waste image classification model tends to associate bright and colourful items with organic wastes. Therefore, it would sometimes classify colourful straws as organic wastes.  
 
 ## References
-- Image Augmentation on the fly using Keras ImageDataGenerator: https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
-- What exactly does shear do in ImageDataGenerator of Keras: https://stackoverflow.com/questions/57301330/what-exactly-the-shear-do-in-imagedatagenerator-of-keras
-- Why we have to rescale by 1. / 255: https://github.com/Arsey/keras-transfer-learning-for-oxford102/issues/1
-- Tutorial on using Keras flow_from_directory and generators: https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
-- Transfer learning and fine-tuning: https://www.tensorflow.org/guide/keras/transfer_learning
-- Deep Learning A-Z™: Convolutional Neural Networks (CNN) - Step 3: Flattening: https://www.slideshare.net/KirillEremenko/deep-learning-az-convolutional-neural-networks-cnn-step-3-flattening
-- Module: tf.keras.models: https://www.tensorflow.org/api_docs/python/tf/keras/models
-- Dense layer binary classification cannot be set to 2: https://stackoverflow.com/questions/67127120/dense-layer-binary-classification-cannot-be-set-to-2
+- Image Augmentation on the fly using Keras ImageDataGenerator 
+  https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
+- What exactly does shear do in ImageDataGenerator of Keras
+  https://stackoverflow.com/questions/57301330/what-exactly-the-shear-do-in-imagedatagenerator-of-keras
+- Why we have to rescale by 1. / 255
+  https://github.com/Arsey/keras-transfer-learning-for-oxford102/issues/1
+- Tutorial on using Keras flow_from_directory and generators
+  https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
+- Transfer learning and fine-tuning
+  https://www.tensorflow.org/guide/keras/transfer_learning
+- Deep Learning A-Z™: Convolutional Neural Networks (CNN) - Step 3: Flattening
+  https://www.slideshare.net/KirillEremenko/deep-learning-az-convolutional-neural-networks-cnn-step-3-flattening
+- Module: tf.keras.models
+  https://www.tensorflow.org/api_docs/python/tf/keras/models
+- Dense layer binary classification cannot be set to 2
+  https://stackoverflow.com/questions/67127120/dense-layer-binary-classification-cannot-be-set-to-2
