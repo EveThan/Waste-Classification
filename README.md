@@ -45,7 +45,7 @@ If you are running the code locally, you will not have to connect to your Google
 
 After making sure that all the files or folders needed to run the program are in the same directory, simply enter the command 'streamlit run waste_streamlit_app.py' in the terminal to run the web application. The website will automatically pop up in the browser. You may then upload a photo of anything, such as a broccoli, and see what the website tells you about the item in the photo you uploaded. The output text will be visible at the bottom of the uploaded photo.
 
-## What have I learned
+## What I have learned
 - Used tensorflow.keras to load images from directories.
 - Used pandas to create a dataframe containing the images as data and matplotlib to display the data.
 - Used tensorflow.keras to create an instance of InceptionV3 with the pre-learned imagenet weights and added another 2 dense layers to complete the image classification model.
