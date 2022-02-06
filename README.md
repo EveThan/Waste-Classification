@@ -38,7 +38,7 @@ In each of the training, validation, and test folders, there are 2 subfolders na
 - <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/requirements.txt" target="_blank">requirements.txt</a>
 - <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/setup.sh" target="_blank">setup.sh</a>
 - <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/waste_streamlit_app.py" target="_blank">waste_streamlit_app.py</a>
-- waste_model.h5 which can be downloaded from running the last cell of <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Waste_Image_Classification.ipynb" target="_blank">Waste_Image_Classification.ipynb</a>
+- waste_model.h5 which can be downloaded by running the last cell of <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Waste_Image_Classification.ipynb" target="_blank">Waste_Image_Classification.ipynb</a>
 
 ## How to use the program
 If you are running the code locally, you will not have to connect to your Google Drive as what I have done in <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Waste_Image_Classification.ipynb" target="_blank">Waste_Image_Classification.ipynb</a>. In general, you would have to edit the code cells where directory paths of the dataset and files are defined so that they match the directories where you put these files in. Therefore, the code cells that you might have to edit are the second, third and last code cells in <a href="https://github.com/ZhengEnThan/Waste-Classification/blob/main/Waste_Image_Classification.ipynb" target="_blank">Waste_Image_Classification.ipynb</a>. 
