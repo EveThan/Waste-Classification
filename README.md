@@ -90,3 +90,5 @@ From what I have observed, the trained waste image classification model tends to
   https://www.tensorflow.org/api_docs/python/tf/keras/models
 - Dense layer binary classification cannot be set to 2 <br>
   https://stackoverflow.com/questions/67127120/dense-layer-binary-classification-cannot-be-set-to-2
+
+~ Project created in January 2022 ~
