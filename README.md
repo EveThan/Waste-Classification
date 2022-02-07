@@ -1,4 +1,4 @@
-# Waste Image Classification Website
+# Waste Image Classification Website using InceptionV3
 
 <br>
 
