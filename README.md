@@ -61,7 +61,7 @@ After making sure that all the files or folders needed to run the program are in
 - matplotlib
 - pandas
 
-## Approach
+## Approaches
 The InceptionV3 model with Imagenet weights is used. All the layers except the last one are frozen to avoid destroying any of the information they contain in future training. The last layer of the neural network is added and trained with our training images. Since we want to use probabilities as a basis of how we decide whether the item in a given image is organic or recyclable, the activation function used for the last layer is the Sigmoid function. 
 
 Using EarlyStopping with a patience of 5 epochs on validation loss, the model fit the training data with a validation loss of 0.2896 and validation accuracy of 0.8737 or 87%. The trained model is able to achieve an accuracy of around 83% when tested on the test set. 
